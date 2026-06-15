@@ -13,11 +13,13 @@ Stores weather data as CSV files
 Uses Python virtual environments and dependency management
 Built using a modular Python structure
 Technologies
+
 Python
 Pandas
 Requests
 Git
 GitHub
+
 Project Structure
 earth-observation-data-pipeline/
 ├── data/
@@ -26,16 +28,19 @@ earth-observation-data-pipeline/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+
 Installation
 pip install -r requirements.txt
 Running the Project
 python src/fetch_weather.py
+
 Future Improvements
 Store data in PostgreSQL
 Add Docker support
 Implement automated scheduling
 Add data visualisation dashboards
 Deploy to cloud infrastructure
+
 Author
 
 Callum Allton
