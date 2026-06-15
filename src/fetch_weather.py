@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -26,7 +26,7 @@ def fetch_weather(latitude, longitude):
 
     df["latitude"] = latitude
     df["longitude"] = longitude
-    df["fetched_at"] = datetime.utcnow().isoformat()
+    df["fetched_at"] = datetime.now(timezone.utc).isoformat()
 
     return df
 

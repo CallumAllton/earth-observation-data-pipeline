@@ -35,6 +35,7 @@ Running the Project
 python src/fetch_weather.py
 
 Future Improvements
+
 Store data in PostgreSQL
 Add Docker support
 Implement automated scheduling
